@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro Temperature Climatiche</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Registro Temperature Climatiche</h1>
+      <div class="input-section">
+        <input
+          type="number"
+          id="temperatureInput"
+          placeholder="Inserisci temperatura"
+        />
+        <button onclick="addTemperature()">Aggiungi Temperatura</button>
+        <br />
+        <button onclick="resetAll()">Resetta</button>
+      </div>
+      <div class="temperature-list">
+        <h2>Temperature Registrate:</h2>
+        <ul id="temperatureList"></ul>
+      </div>
+      <div class="average-section">
+        <h2>Media delle Temperature:</h2>
+        <p id="averageTemperature">N/A</p>
+        <img
+          id="seasonImage"
+          src=""
+          alt="Immagine della stagione"
+          style="display: none; width: 100%; height: auto; margin-top: 20px"
+        />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
